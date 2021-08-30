@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube-Download</title>
+    <link rel="stylesheet" href="css/compiled-tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+  <body>
+    <div class="bg-gray-300 h-screen">
+      <h1 class="pt-7">YouTube Downloader</h1>
+      <div class="flex flex-col justify-evenly items-center h-screen">
+        <div class="rounded-lg flex flex-row md:flex-initial justify-center">
+          <!-- Video URL Input -->
+          <div class="mx-8">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Masukan Link Video Yt"
+                id="videoURL"
+                class="url-input"
+              />
+              <label for="videoURl"></label>
+            </div>
+            <div class="btn-card bg-white">
+              <button id="btn-info">Download</button>
+             </div>
+          </div>
+        </div>
+
+        <!-- Video Info -->
+        <div class="col-md-6">
+          <div class="video-data">
+            <div class="data">
+              <div class="thumbnail">
+                <img height="200" width="200" class="rounded-t-lg" />
+              </div>
+              <div class="info">
+                <h2></h2>
+                <p></p>
+              </div>
+            </div>
+            <div class="controls">
+              <input type="hidden" id="video-url" />
+              <select
+                id="download-options"
+                class="form-select"
+                disabled
+              ></select>
+              <button type="button" id="download-btn" class="btn btn-primary">
+                Download
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- Skip dulu belum mengerti tentang grid dan flex -->
