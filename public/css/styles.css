@@ -1,19 +1,73 @@
-.url-input {
+html {
+  box-sizing: border-box;
+  color: white;
+}
+
+i {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Helvetica Neue", sans-serif;
+  background-image: radial-gradient(
+    circle at 0% 0%,
+    #373b52,
+    #252736 51%,
+    #1d1e26
+  );
+}
+
+input {
   border-style: none;
   background: transparent;
   outline: none;
 }
 
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container__input {
+  display: flex;
+  padding: 10px;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__info {
+}
+
+.title {
+  margin-top: 100px;
+}
+
 .webflow-style-input {
   position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   width: 100%;
-  max-width: 400px;
   margin: 0 auto;
   border-radius: 2px;
-  padding: 1.4rem 2rem 1.6rem;
-  background: blue;
+  padding: 15px;
+  background: rgba(57, 63, 84, 0.8);
 }
 
 label {
@@ -47,12 +101,19 @@ label {
 input:focus ~ label {
   opacity: 1;
 }
+.card-icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.icon {
+  font-size: 25px;
+}
 
 .webflow-style-input input {
   flex-grow: 1;
   color: #bfd2ff;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
+
   vertical-align: middle;
 }
 
@@ -70,6 +131,13 @@ input:focus ~ label {
 
 .webflow-style-input button:hover {
   color: #bfd2ff;
+}
+
+footer {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes gradient {

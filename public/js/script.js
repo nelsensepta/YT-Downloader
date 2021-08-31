@@ -14,7 +14,6 @@ document.getElementById("btn-info").addEventListener("click", () => {
       let detailsNodes = {
         thumbnail: document.querySelector(".video-data .data .thumbnail img"),
         title: document.querySelector(".video-data .data .info h2"),
-        description: document.querySelector(".video-data .data .info p"),
         videoURL: document.querySelector(".video-data .controls #video-url"),
         downloadOptions: document.querySelector(
           ".video-data .controls #download-options"
@@ -37,7 +36,6 @@ document.getElementById("btn-info").addEventListener("click", () => {
             data.videoDetails.thumbnails.length - 1
           ].url;
         detailsNodes.title.innerText = data.videoDetails.title;
-        detailsNodes.description.innerText = data.videoDetails.description;
         detailsNodes.videoURL.value = videoURL;
         detailsNodes.downloadOptions.innerHTML = html;
 
